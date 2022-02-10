@@ -1,0 +1,19 @@
+{
+  "name": "Laravel Engine",
+  "version": "0.0.1",
+  "description": "Documentation for the Laravel Engine package",
+  "main": "index.js",
+  "authors": {
+    "name": "Harry Bayliss",
+    "email": "harry@hjb.dev"
+  },
+  "repository": "https://github.com/hjbdev/laravel-engine/Laravel Engine",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
