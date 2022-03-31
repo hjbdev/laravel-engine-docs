@@ -26,7 +26,7 @@ module.exports = {
      *
      * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
      */
-    theme: 'vt',
+    theme: "vt",
     themeConfig: {
         repo: "",
         editLinks: false,
@@ -38,16 +38,25 @@ module.exports = {
                 text: "Docs",
                 link: "/docs/",
             },
+            {
+                text: "Fields",
+                link: "/fields/",
+            },
         ],
-        sidebar: {
-            "/docs/": [
-                {
-                    title: "Docs",
-                    collapsable: false,
-                    children: ["", "getting-started"],
-                },
-            ],
-        },
+        sidebar: [
+            {
+                title: "Docs",
+                path: '/docs/',
+                children: ["/docs/", "/docs/getting-started"],
+                sidebarDepth: 2,
+            },
+            {
+                title: "Fields",
+                path: '/fields/',
+                children: ["/fields/", "/fields/text"],
+                sidebarDepth: 2,
+            },
+        ],
     },
 
     /**
