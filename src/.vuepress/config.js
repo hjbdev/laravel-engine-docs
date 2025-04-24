@@ -42,6 +42,10 @@ module.exports = {
                 text: "Fields",
                 link: "/fields/",
             },
+            {
+                text: "Groups",
+                link: "/groups/",
+            },
         ],
         sidebar: [
             {
@@ -54,6 +58,12 @@ module.exports = {
                 title: "Fields",
                 path: '/fields/',
                 children: ["/fields/", "/fields/text"],
+                sidebarDepth: 2,
+            },
+            {
+                title: "Groups",
+                path: '/groups/',
+                children: ["/groups/"],
                 sidebarDepth: 2,
             },
         ],

@@ -23,13 +23,13 @@ Field::create('Name')->required(function () {
 Controls whether the field is visible, can be used in multiple ways:
 
 ```php
-Field::create('Name')->required(true);
+Field::create('Name')->visible(true);
 
-Field::create('Name')->required('user_has_name', '=', true);
+Field::create('Name')->visible('user_has_name', '=', true);
 
-Field::create('Name')->required('user_has_name', true);
+Field::create('Name')->visible('user_has_name', true);
 
-Field::create('Name')->required(function () {
+Field::create('Name')->visible(function () {
     return true;
 });
 ```
