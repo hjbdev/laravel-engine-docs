@@ -51,7 +51,7 @@ module.exports = {
             {
                 title: "Docs",
                 path: '/docs/',
-                children: ["/docs/", "/docs/getting-started"],
+                children: ["/docs/", "/docs/getting-started", "/docs/api-route"],
                 sidebarDepth: 2,
             },
             {
